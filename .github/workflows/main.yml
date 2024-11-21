@@ -9,3 +9,10 @@ jobs:
     steps:
       - name: Executando na main
         run: echo "Executando comando na main"
+  todos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execução em Feature
+        run: echo "Execução em Feature"
+      - name: Execução em Hotfix
+        run: echo "Execução em hotfix"
