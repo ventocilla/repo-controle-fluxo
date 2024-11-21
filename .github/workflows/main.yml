@@ -3,6 +3,7 @@ on:
   push:
 jobs:
   apenas-main:
+    if: ${{ github.ref  == 'refs/heads/main'}}
     name: Esse Job só executa na branch main
     runs-on: ubuntu-latest
     steps:
